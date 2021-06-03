@@ -1,24 +1,24 @@
-//
-//
-
+// Copyright (C) 2020
+// All rights reserved
 package labcodingstandards;
 
 import java.util.Scanner;
 
-
 /**
- * @author
- *
+ * @author Rogwi
+ * this class emulates a calculator
  */
-public class Calculator {	
-	
+public class Calculator {
+	//CHECKSTYLE:OFF
+	/**
+	 * Main method.
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		Scanner reader = new Scanner(System.in);
-		
         System.out.print("1. +\n2. -\n3. *\n4. /\nEnter an operator: ");
-        
         char operator = reader.nextLine().charAt(0);
-        double First;
+        double first;
         double second;
         String input;
         
@@ -52,7 +52,14 @@ public class Calculator {
         System.out.printf(result);
 		reader.close();
 	}
-
+	//CHECKSTYLE:ON
+	/**
+	 * This method makes an operation
+	 * @param first
+	 * @param second
+	 * @param operator
+	 * @return
+	 */
 	private String Operation(double first,double second,char operator) {
 		double result = 0;
 		switch(operator)
