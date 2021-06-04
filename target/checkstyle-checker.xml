@@ -10,12 +10,23 @@
 		<module name="LocalVariableName">
 			<property name="format" value="^[a-z](_?[a-zA-Z0-9]+)*$" />
 		</module>
-		<module name="MissingJavadocMethod ">
+		<module name="MissingJavadocMethod">
 			<property name="scope" value="private"/>
 			<property name="allowMissingPropertyJavadoc" value="true" />
 		</module>
 		<module name="JavadocType">
 			<property name="authorFormat" value="\S" />
 		</module>
+		<module name="MethodName">
+		   <property name="format" value="^[a-z](_?[a-zA-Z0-9]+)*$"/>
+		</module>
+		<module name="JavadocMethod">
+		  <property name="scope" value="public"/>
+		  <property name="allowMissingParamTags" value="true"/>
+		</module>
+		<module name="WhitespaceAfter">
+		  <property name="tokens" value="COMMA, SEMI"/>
+		</module>
+		
 	</module>	
 </module> 

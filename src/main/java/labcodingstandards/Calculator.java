@@ -47,7 +47,7 @@ public class Calculator {
         }
 
         Calculator cal=new Calculator();
-        String result=cal.Operation(First,second,operator);
+        String result=cal.Operation(first, second, operator);
 
         System.out.printf(result);
 		reader.close();
@@ -60,7 +60,7 @@ public class Calculator {
 	 * @param operator
 	 * @return
 	 */
-	private String Operation(double first,double second,char operator) {
+	private String operation (double first, double second, char operator) {
 		double result = 0;
 		switch(operator)
         {
